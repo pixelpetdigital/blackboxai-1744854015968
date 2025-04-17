@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo con IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2a1f62 0%, #4b2a7c 100%);
+            min-height: 100vh;
+        }
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('wave.svg');
+            background-size: 1000px 100px;
+        }
+        .youtube-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+        .youtube-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-opacity-90 bg-purple-900 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="Eduardo con IA" class="w-12 h-12 rounded-full">
+                    <span class="text-xl font-bold">Eduardo con IA</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="hover:text-purple-300">Inicio</a>
+                    <a href="#" class="hover:text-purple-300">Blog</a>
+                    <a href="#" class="hover:text-purple-300">Links</a>
+                    <a href="https://www.youtube.com/@Eduardoconia" target="_blank" 
+                       class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition">
+                        Suscríbete <i class="fab fa-youtube ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-24">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Descubre las mejores herramientas de IA para crear imágenes, videos, música, blogs y potenciar tus negocios digitales.
+                </h1>
+            </div>
+
+            <!-- Featured Videos -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="youtube-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+                <div class="youtube-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Resource Links -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <a href="#" class="block bg-white bg-opacity-10 rounded-xl p-4 hover:bg-opacity-20 transition">
+                    <img src="ebook.jpg" alt="E-Book" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">E-Book: 96 Estilos Fantásticos</h3>
+                </a>
+                <a href="#" class="block bg-white bg-opacity-10 rounded-xl p-4 hover:bg-opacity-20 transition">
+                    <img src="prompt.jpg" alt="Prompt Guide" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Prompt Perfecto para Imágenes</h3>
+                </a>
+                <a href="#" class="block bg-white bg-opacity-10 rounded-xl p-4 hover:bg-opacity-20 transition">
+                    <img src="vidiq.jpg" alt="VidIQ" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">VidIQ YouTube Certified</h3>
+                </a>
+            </div>
+
+            <!-- Recent Articles -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Artículos Recientes</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <article class="bg-white bg-opacity-10 rounded-xl overflow-hidden hover:bg-opacity-20 transition">
+                        <img src="qwen.jpg" alt="Qwen" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Qwen 2.5 Max Videos e Imagenes con IA</h3>
+                            <p class="text-gray-300 mb-4">Innovaciones y Aplicaciones en la Creación de Contenido</p>
+                            <span class="text-sm text-gray-400">9 de febrero de 2025</span>
+                        </div>
+                    </article>
+                    <article class="bg-white bg-opacity-10 rounded-xl overflow-hidden hover:bg-opacity-20 transition">
+                        <img src="deepseek.jpg" alt="DeepSeek" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">DeepSeek: Innovación en Búsqueda de Datos Avanzada</h3>
+                            <p class="text-gray-300 mb-4">Explorando las nuevas fronteras de la IA</p>
+                            <span class="text-sm text-gray-400">9 de febrero de 2025</span>
+                        </div>
+                    </article>
+                    <article class="bg-white bg-opacity-10 rounded-xl overflow-hidden hover:bg-opacity-20 transition">
+                        <img src="tensor.jpg" alt="Tensor ART" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Tutorial Tensor ART para crear Imágenes con IA</h3>
+                            <p class="text-gray-300 mb-4">Guía Completa y Práctica</p>
+                            <span class="text-sm text-gray-400">14 de octubre de 2024</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="wave"></div>
+</body>
+</html>
